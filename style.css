@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    gap: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    width: 250px;
+    height: 91vh;
+    background-color: aquamarine;
+}
+
+.sidebar a{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 35px;
+    background-color: aqua;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.main{
+    gap: 55px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.title{
+    height: 10vh;
+    width: 80vw;
+    align-items: center;
+    display: flex;
+}
+
+.card{
+    height: 250px;
+    width: 400px;
+    background-color: rgb(152, 157, 162);
+}
