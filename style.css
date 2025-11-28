@@ -80,7 +80,7 @@ html, body{
 
 .title-row1{
     display: flex;
-    gap: 31vw;
+    gap: 31vw; /*520px*/
     flex-direction: row;
 }
 
@@ -100,4 +100,23 @@ html, body{
     height: 300px;
     width: 600px;
     background-color: rgb(152, 157, 162);
+}
+
+@media (max-width: 1703px) {
+    .card{
+        height: 250px;
+        width: 450px;
+    }
+
+    .main{
+        padding-left: 55px;
+    }
+
+    .title{
+        gap: 55vw;
+    }
+
+    .title-row1{
+        gap: 29vw;
+    }
 }
