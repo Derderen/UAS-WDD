@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="style.css" />
     <title>Web Portal Mahasiswa UBM</title>
   </head>
+
   <body>
     <nav class="navbar">
-        <img src="menu-button.svg" style="width: 30px;">
-        <h1>Portal Mahasiswa S1</h1>
+      <img src="menu-button.svg" class="menu-btn" style="width: 30px;">
+      <h1>Portal Mahasiswa S1</h1>
     </nav>
+
     <div class="content">
       <div class="sidebar">
         <img src="Fall-Guys-1.png" />
@@ -21,48 +23,50 @@
         <a href="">Score</a>
         <a href="">Registration</a>
       </div>
+
       <div class="main">
         <div class="title">
           <h1>Dashboard</h1>
           <img style="height: 60px" src="Fall-Guys-1.png" />
         </div>
+
         <div class="scroll-container">
-            <div class="parent">
-                <div class="div1">
-                    <p style="font-size: 20px; margin: 0;">Today's Class</p>
-                </div>
-                <div class="div2">
-                    <p style="font-size: 20px; margin: 0;">Assignment List</p>
-                </div>
-                <div class="div3">
-                    <div class="card">
-                    Test
-                       </div>
-                </div>
-                <div class="div4">
-                    <div class="card">
-                    Test
-                    </div>
-                </div>
-                <div class="div5">
-                    <p style="font-size: 20px; margin: 0;">News & Event</p>
-                </div>
-                <div class="div6">
-                    <p style="font-size: 20px; margin: 0;">B+ Connect</p>
-                </div>
-                <div class="div7">
-                    <div class="card">
-                    Test
-                    </div>
-                </div>
-                <div class="div8">
-                    <div class="card">
-                    Test
-                    </div>
-                </div>
+          <div class="parent">
+            <div class="div1">
+              <p style="font-size: 20px; margin: 0;">Today's Class</p>
+            </div>
+
+            <div class="div2">
+              <p style="font-size: 20px; margin: 0;">Assignment List</p>
+            </div>
+
+            <div class="div3"><div class="card">Test</div></div>
+            <div class="div4"><div class="card">Test</div></div>
+
+            <div class="div5">
+              <p style="font-size: 20px; margin: 0;">News & Event</p>
+            </div>
+
+            <div class="div6">
+              <p style="font-size: 20px; margin: 0;">B+ Connect</p>
+            </div>
+
+            <div class="div7"><div class="card">Test</div></div>
+            <div class="div8"><div class="card">Test</div></div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- JS for sliding sidebar -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
   </body>
 </html>
