@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="activitystyle.css" />
+    <title>Web Portal Mahasiswa UBM</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img src="menu-button.svg" class="menu-btn" style="width: 30px;">
+      <h1>Portal Mahasiswa S1</h1>
+    </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <img src="Fall-Guys-1.png" />
+        <a style="background-color: aqua" href="">Home</a>
+        <a href="">Timetable</a>
+        <a href="">Score</a>
+        <a href="">Registration</a>
+      </div>
+
+      <div class="main">
+        <div class="title">
+          <h1>Upcoming Activities</h1>
+          <img style="height: 60px" src="Fall-Guys-1.png" />
+        </div>
+
+        <div class="scroll-container">
+          <div class="parent">
+           <p><i>You can participate in an activity by going to Registration > Activity</i></p>
+            
+            <table class="timetable">
+              <thead>
+                <tr>
+                  <th>Activity Name</th>
+                  <th>Date & Time</th>
+                  <th>Activity Type</th>
+                  <th>Payment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mitta Day 2025 "Together as One, Together We Shine" - Peserta</td>
+                  <td>22 Dec (06:00) - <p></p>23 Dec (17:30) 2025</td>
+                  <td>Religious <p></p>(Non Academical)</td>
+                  <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>International Competition Retail Business Case Analysis IMPACT 2026</td>
+                    <td>28 Apr 2025 <P></P>(08:00 - 12:00)</td>
+                    <td>(Academical)</td>
+                    <td>Payment pending <p></p>05 Dec 2025 (23:59)</td>
+                </tr>
+                <tr>
+                  <td>Business Plan "Create Your Own Business":"Innovative Retail Startups for Gen Z & Alpha: Designing Future-Ready Business Models"</td>
+                  <td>29 Apr 2025 <P></P>(08:00 - 12:00)</td>
+                  <td>Business Plan <p> (Academical)</p></td>
+                  <td>Paid</td>
+                </tr>
+              </tbody>
+            </table>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for sliding sidebar -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>

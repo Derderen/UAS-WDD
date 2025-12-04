@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="coursestyle.css" />
+    <title>Web Portal Mahasiswa UBM</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img src="menu-button.svg" class="menu-btn" style="width: 30px;">
+      <h1>Portal Mahasiswa S1</h1>
+    </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <img src="Fall-Guys-1.png" />
+        <a style="background-color: aqua" href="">Home</a>
+        <a href="">Timetable</a>
+        <a href="">Score</a>
+        <a href="">Registration</a>
+      </div>
+
+      <div class="main">
+        <div class="title">
+          <h1>Dashboard</h1>
+          <img style="height: 60px" src="Fall-Guys-1.png" />
+        </div>
+
+        <div class="scroll-container">
+          <div class="parent">
+            <select id="daySelect">
+                <option value="monday">Monday</option>
+                <option value="tuesday" selected>Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+              </select>
+            </div>
+            
+            <table class="timetable">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Time</th>
+                  <th>Class</th>
+                  <th>Lecturer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Interaction Design</td>
+                  <td>07:30 - 09:10</td>
+                  <td>Olympia Laboratory</td>
+                  <td>Eveline Dau Leja, S.Sn., MA </td>
+                </tr>
+                <tr>
+                    <td>Interaction Design</td>
+                    <td>09:30 - 11:10</td>
+                    <td>Olympia Laboratory</td>
+                    <td>Eveline Dau Leja, S.Sn., MA </td>
+                </tr>
+                <tr>
+                  <td>Web Design & Development</td>
+                  <td>11:30 - 13:10</td>
+                  <td>Olympia Laboratory</td>
+                  <td>Thami Endamora Daulay, S.Kom., MA </td>
+                </tr>
+                <tr>
+                    <td>Web Design & Development</td>
+                    <td>13:30 - 15:10</td>
+                    <td>Olympia Laboratory</td>
+                    <td>Thami Endamora Daulay, S.Kom., MA </td>
+                </tr>
+              </tbody>
+            </table>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for sliding sidebar -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>

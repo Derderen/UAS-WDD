@@ -1,0 +1,140 @@
+/* Remove scrollbars appearance but keep scrolling */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scrollbar-width: none;
+}
+
+.navbar {
+  padding-left: 25px;
+  height: 60px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  display: none;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* DESKTOP SIDEBAR */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+  background-color: aquamarine;
+  transition: transform 0.3s ease;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding-left: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 50px;
+}
+
+.title {
+  width: 100%;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scroll-container {
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+/* --- GRID REMOVED FOR TABLE TO EXPAND FULL WIDTH --- */
+.parent {
+  width: 100%;
+}
+
+/* -------------------- TIMETABLE RESPONSIVE STYLE -------------------- */
+.timetable {
+    table-layout: fixed;
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #cccccc;
+  padding: 12px;
+}
+
+.timetable th {
+  background-color: #e7f5ff;
+}
+
+.timetable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.timetable tr:hover {
+  background-color: #e4f0ff;
+  transition: 0.2s ease-in-out;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .navbar img {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .main {
+    padding-left: 15px;
+  }
+
+  .timetable th, .timetable td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .scroll-container {
+    overflow-x: auto;
+  }
+}

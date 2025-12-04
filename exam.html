@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="examstyle.css" />
+    <title>Web Portal Mahasiswa UBM</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img src="menu-button.svg" class="menu-btn" style="width: 30px;">
+      <h1>Portal Mahasiswa S1</h1>
+    </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <img src="Fall-Guys-1.png" />
+        <a style="background-color: aqua" href="">Home</a>
+        <a href="">Timetable</a>
+        <a href="">Score</a>
+        <a href="">Registration</a>
+      </div>
+
+      <div class="main">
+        <div class="title">
+          <h1>Upcoming Test</h1>
+          <img style="height: 60px" src="Fall-Guys-1.png" />
+        </div>
+
+        <div class="scroll-container">
+          <div class="parent">
+          <h3>Final Odd Exam 2025 / 2026</h3>
+           <p><i>The link for online tests will appear when the test begins</i></p>
+            
+            <table class="timetable">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Class / Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Animation Production</td>
+                  <td>10 Dec 2025 | Wed</td>
+                  <td>08:00 - 08:45</td>
+                  <td>(Online test) </td>
+                </tr>
+                <tr>
+                  <td>Web Design & Development</td>
+                  <td>11 Dec 2025 | Thu</td>
+                  <td>08:00 - 08:45</td>
+                  <td>(Online test) </td>
+                </tr>
+                <tr>
+                  <td>Modelling and Rendering</td>
+                  <td>13 Dec 2025 | Sat</td>
+                  <td>10:00 - 10:45</td>
+                  <td>(Online test) </td>
+                </tr>
+                <tr>
+                  <td>Design Thinking & Research</td>
+                  <td>15 Dec 2025 | Mon</td>
+                  <td>13:00 - 14:40</td>
+                  <td>R605 | 6th floor | Chair number: 01 </td>
+                </tr>
+                <tr>
+                  <td>Digital Painting</td>
+                  <td>16 Dec 2025 | Tue</td>
+                  <td>08:00 - 08:45</td>
+                  <td>(Online test) </td>
+                </tr>
+                <tr>
+                  <td>Interaction Design</td>
+                  <td>18 Dec 2025 | Thu</td>
+                  <td>15:00 - 15:45</td>
+                  <td>(Online test) </td>
+                </tr>
+              </tbody>
+            </table>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for sliding sidebar -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>
