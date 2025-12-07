@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="activitystyle.css" />
+    <title>Web Portal Mahasiswa UBM</title>
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="menu-button.svg" class="menu-btn" style="width: 30px;">
+      <h1>Portal Mahasiswa S1</h1>
+    </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <img src="Fall-Guys-1.png" />
+        <a href="">Home</a>
+        <a href="">Timetable</a>
+        <a href="">Score</a>
+        <a style="background-color: aqua" href="">Registration</a>
+        <a style="background-color: SkyBlue" href="">Activity</a>
+        <a style="background-color: PaleTurquoise" href="">Tuition</a>
+      </div>
+
+      <div class="main">
+        <div class="title">
+          <h1>Registration > Activity > IMPACT 2026	</h1>
+          <img style="height: 60px" src="Fall-Guys-1.png" />
+        </div>
+           
+            <div class="card">
+                <img style="height: 400px; transform:translate(5%, 5%);" src="epan.png">
+                <p style="transform:translate(34%, -1420%); font-size: 1.5rem;"><b>IMPACT 2026</b></p>
+                <p style="transform:translate(34%, -2220%); font-size: 1rem;">
+                This is where you put the description about the event in question.
+            </div>
+
+            <div class="card2">
+                <p style="transform:translate(14%, -35%); font-size: 1.5rem;">Entry Fee = Rp 200.000,00</p>
+            </div>
+
+            <div class="card3">
+                <p style="transform:translate(28%, -40%); font-size: 0.9rem;"><b>Registration</b></p>
+                <img style="height: 200px; width: 200px; transform:translate(1%, 5%);" src="epan.png">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for sliding sidebar -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>
