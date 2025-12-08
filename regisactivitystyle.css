@@ -54,7 +54,7 @@ html, body {
 .fluid-div {
   display: container;
   height: -1em;
-  transform: translate(8%, -1300%)
+  transform: translate(30px, -1300%)
 }
 /* DESKTOP SIDEBAR */
 .sidebar {
