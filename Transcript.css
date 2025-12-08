@@ -420,8 +420,8 @@ body {
 }
 
 .table-wrapper{
-    border: 2px solid var(--frame);
-    border-radius: 10px;
+    border: 0px solid var(--frame);
+    border-radius: 0px;
     overflow: hidden;
     max-width: 100%;
     margin: 20px auto;
