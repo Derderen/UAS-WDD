@@ -32,8 +32,8 @@ html, body {
 }
 
 .card {
-  height: 900px;
-  width: 1300px;
+  height: 170vh;
+  width: 1500px;
   background-color: rgb(152, 157, 162);
 }
 
@@ -41,14 +41,20 @@ html, body {
   height: 55px;
   width: 400px;
   background-color: rgb(130, 127, 142);
-  transform: translate(110%, -685%)
+  transform: translate(133%, -365%)
 }
 
 .card3 {
-  height: 30px;
+  height: 40px;
   width: 205px;
   background-color: rgb(130, 127, 142);
-  transform: translate(8%, -1270%)
+  transform: translate(259%, -1370%)
+}
+
+.fluid-div {
+  display: container;
+  height: -1em;
+  transform: translate(8%, -1300%)
 }
 /* DESKTOP SIDEBAR */
 .sidebar {
